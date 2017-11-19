@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5076C5CB1FC22E6700D76968 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5076C5CA1FC22E6700D76968 /* SignUpViewController.swift */; };
+		5076C5CD1FC22E8400D76968 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5076C5CC1FC22E8400D76968 /* HomeViewController.swift */; };
+		5076C5CF1FC22F6200D76968 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5076C5CE1FC22F6200D76968 /* UserModel.swift */; };
+		50C69E581FBE50270030C1D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C69E571FBE50270030C1D0 /* AppDelegate.swift */; };
+		50C69E5A1FBE50270030C1D0 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C69E591FBE50270030C1D0 /* LogInViewController.swift */; };
+		50C69E5D1FBE50270030C1D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C69E5B1FBE50270030C1D0 /* Main.storyboard */; };
+		50C69E601FBE50270030C1D0 /* FirstClassConnectiOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 50C69E5E1FBE50270030C1D0 /* FirstClassConnectiOS.xcdatamodeld */; };
+		50C69E621FBE50270030C1D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C69E611FBE50270030C1D0 /* Assets.xcassets */; };
+		50C69E651FBE50270030C1D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C69E631FBE50270030C1D0 /* LaunchScreen.storyboard */; };
+		50C69E701FBE50280030C1D0 /* FirstClassConnectiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C69E6F1FBE50280030C1D0 /* FirstClassConnectiOSTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50C69E6C1FBE50280030C1D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50C69E4C1FBE50270030C1D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50C69E531FBE50270030C1D0;
+			remoteInfo = FirstClassConnectiOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5076C5CA1FC22E6700D76968 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		5076C5CC1FC22E8400D76968 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5076C5CE1FC22F6200D76968 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		50C69E541FBE50270030C1D0 /* FirstClassConnectiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstClassConnectiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50C69E571FBE50270030C1D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		50C69E591FBE50270030C1D0 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		50C69E5C1FBE50270030C1D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		50C69E5F1FBE50270030C1D0 /* FirstClassConnectiOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FirstClassConnectiOS.xcdatamodel; sourceTree = "<group>"; };
+		50C69E611FBE50270030C1D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50C69E641FBE50270030C1D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		50C69E661FBE50270030C1D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50C69E6B1FBE50280030C1D0 /* FirstClassConnectiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstClassConnectiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50C69E6F1FBE50280030C1D0 /* FirstClassConnectiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstClassConnectiOSTests.swift; sourceTree = "<group>"; };
+		50C69E711FBE50280030C1D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50C69E511FBE50270030C1D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50C69E681FBE50280030C1D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50C69E4B1FBE50270030C1D0 = {
+			isa = PBXGroup;
+			children = (
+				50C69E561FBE50270030C1D0 /* FirstClassConnectiOS */,
+				50C69E6E1FBE50280030C1D0 /* FirstClassConnectiOSTests */,
+				50C69E551FBE50270030C1D0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50C69E551FBE50270030C1D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50C69E541FBE50270030C1D0 /* FirstClassConnectiOS.app */,
+				50C69E6B1FBE50280030C1D0 /* FirstClassConnectiOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50C69E561FBE50270030C1D0 /* FirstClassConnectiOS */ = {
+			isa = PBXGroup;
+			children = (
+				5076C5CE1FC22F6200D76968 /* UserModel.swift */,
+				50C69E571FBE50270030C1D0 /* AppDelegate.swift */,
+				50C69E591FBE50270030C1D0 /* LogInViewController.swift */,
+				5076C5CA1FC22E6700D76968 /* SignUpViewController.swift */,
+				5076C5CC1FC22E8400D76968 /* HomeViewController.swift */,
+				50C69E5B1FBE50270030C1D0 /* Main.storyboard */,
+				50C69E611FBE50270030C1D0 /* Assets.xcassets */,
+				50C69E631FBE50270030C1D0 /* LaunchScreen.storyboard */,
+				50C69E661FBE50270030C1D0 /* Info.plist */,
+				50C69E5E1FBE50270030C1D0 /* FirstClassConnectiOS.xcdatamodeld */,
+			);
+			path = FirstClassConnectiOS;
+			sourceTree = "<group>";
+		};
+		50C69E6E1FBE50280030C1D0 /* FirstClassConnectiOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				50C69E6F1FBE50280030C1D0 /* FirstClassConnectiOSTests.swift */,
+				50C69E711FBE50280030C1D0 /* Info.plist */,
+			);
+			path = FirstClassConnectiOSTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50C69E531FBE50270030C1D0 /* FirstClassConnectiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50C69E741FBE50280030C1D0 /* Build configuration list for PBXNativeTarget "FirstClassConnectiOS" */;
+			buildPhases = (
+				50C69E501FBE50270030C1D0 /* Sources */,
+				50C69E511FBE50270030C1D0 /* Frameworks */,
+				50C69E521FBE50270030C1D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FirstClassConnectiOS;
+			productName = FirstClassConnectiOS;
+			productReference = 50C69E541FBE50270030C1D0 /* FirstClassConnectiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		50C69E6A1FBE50280030C1D0 /* FirstClassConnectiOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50C69E771FBE50280030C1D0 /* Build configuration list for PBXNativeTarget "FirstClassConnectiOSTests" */;
+			buildPhases = (
+				50C69E671FBE50280030C1D0 /* Sources */,
+				50C69E681FBE50280030C1D0 /* Frameworks */,
+				50C69E691FBE50280030C1D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50C69E6D1FBE50280030C1D0 /* PBXTargetDependency */,
+			);
+			name = FirstClassConnectiOSTests;
+			productName = FirstClassConnectiOSTests;
+			productReference = 50C69E6B1FBE50280030C1D0 /* FirstClassConnectiOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50C69E4C1FBE50270030C1D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "MJ Norona";
+				TargetAttributes = {
+					50C69E531FBE50270030C1D0 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					50C69E6A1FBE50280030C1D0 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 50C69E531FBE50270030C1D0;
+					};
+				};
+			};
+			buildConfigurationList = 50C69E4F1FBE50270030C1D0 /* Build configuration list for PBXProject "FirstClassConnectiOS" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50C69E4B1FBE50270030C1D0;
+			productRefGroup = 50C69E551FBE50270030C1D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50C69E531FBE50270030C1D0 /* FirstClassConnectiOS */,
+				50C69E6A1FBE50280030C1D0 /* FirstClassConnectiOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50C69E521FBE50270030C1D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C69E651FBE50270030C1D0 /* LaunchScreen.storyboard in Resources */,
+				50C69E621FBE50270030C1D0 /* Assets.xcassets in Resources */,
+				50C69E5D1FBE50270030C1D0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50C69E691FBE50280030C1D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50C69E501FBE50270030C1D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5076C5CD1FC22E8400D76968 /* HomeViewController.swift in Sources */,
+				50C69E5A1FBE50270030C1D0 /* LogInViewController.swift in Sources */,
+				50C69E601FBE50270030C1D0 /* FirstClassConnectiOS.xcdatamodeld in Sources */,
+				5076C5CB1FC22E6700D76968 /* SignUpViewController.swift in Sources */,
+				5076C5CF1FC22F6200D76968 /* UserModel.swift in Sources */,
+				50C69E581FBE50270030C1D0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50C69E671FBE50280030C1D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C69E701FBE50280030C1D0 /* FirstClassConnectiOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50C69E6D1FBE50280030C1D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50C69E531FBE50270030C1D0 /* FirstClassConnectiOS */;
+			targetProxy = 50C69E6C1FBE50280030C1D0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		50C69E5B1FBE50270030C1D0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50C69E5C1FBE50270030C1D0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		50C69E631FBE50270030C1D0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50C69E641FBE50270030C1D0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		50C69E721FBE50280030C1D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		50C69E731FBE50280030C1D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50C69E751FBE50280030C1D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K942986D66;
+				INFOPLIST_FILE = FirstClassConnectiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.FirstClassConnectiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		50C69E761FBE50280030C1D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K942986D66;
+				INFOPLIST_FILE = FirstClassConnectiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.FirstClassConnectiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		50C69E781FBE50280030C1D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K942986D66;
+				INFOPLIST_FILE = FirstClassConnectiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.FirstClassConnectiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FirstClassConnectiOS.app/FirstClassConnectiOS";
+			};
+			name = Debug;
+		};
+		50C69E791FBE50280030C1D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K942986D66;
+				INFOPLIST_FILE = FirstClassConnectiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.FirstClassConnectiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FirstClassConnectiOS.app/FirstClassConnectiOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50C69E4F1FBE50270030C1D0 /* Build configuration list for PBXProject "FirstClassConnectiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50C69E721FBE50280030C1D0 /* Debug */,
+				50C69E731FBE50280030C1D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50C69E741FBE50280030C1D0 /* Build configuration list for PBXNativeTarget "FirstClassConnectiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50C69E751FBE50280030C1D0 /* Debug */,
+				50C69E761FBE50280030C1D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50C69E771FBE50280030C1D0 /* Build configuration list for PBXNativeTarget "FirstClassConnectiOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50C69E781FBE50280030C1D0 /* Debug */,
+				50C69E791FBE50280030C1D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		50C69E5E1FBE50270030C1D0 /* FirstClassConnectiOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				50C69E5F1FBE50270030C1D0 /* FirstClassConnectiOS.xcdatamodel */,
+			);
+			currentVersion = 50C69E5F1FBE50270030C1D0 /* FirstClassConnectiOS.xcdatamodel */;
+			path = FirstClassConnectiOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 50C69E4C1FBE50270030C1D0 /* Project object */;
+}
