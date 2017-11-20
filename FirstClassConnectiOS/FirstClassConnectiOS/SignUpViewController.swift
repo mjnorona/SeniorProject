@@ -54,15 +54,20 @@ class SignUpViewController: UIViewController {
                     
                     
                     print("add User into DB: ", jsonResult)
+                   
                     //error in sign in
                     if jsonResult["message"] != nil {
                         print(jsonResult["message"]!)
                         let alertController = UIAlertController(title: "Error", message: jsonResult["message"] as! String, preferredStyle: .alert)
-
+                        print("1")
                         let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                         alertController.addAction(defaultAction)
-
-                        self.present(alertController, animated: true, completion: nil)
+                        print("2")
+                        
+                        DispatchQueue.main.async {
+                            self.present(alertController, animated: true, completion: nil)
+                        }
+                        print("3")
                     } else { //successfuly signed 
                         print("signed in")
                         DispatchQueue.main.async {
