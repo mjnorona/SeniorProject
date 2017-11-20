@@ -39,7 +39,9 @@ class SignUpViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "SignUpSegue" {
-            let navigationController = segue.destination as! UINavigationController
+            print("going Here")
+            let tabBarController = segue.destination as! UITabBarController
+            let navigationController = tabBarController.viewControllers?.first as! UINavigationController
             let homeViewController = navigationController.topViewController as! HomeViewController
             homeViewController.username = username
         }

@@ -17,6 +17,7 @@
 		50C69E621FBE50270030C1D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C69E611FBE50270030C1D0 /* Assets.xcassets */; };
 		50C69E651FBE50270030C1D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C69E631FBE50270030C1D0 /* LaunchScreen.storyboard */; };
 		50C69E701FBE50280030C1D0 /* FirstClassConnectiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C69E6F1FBE50280030C1D0 /* FirstClassConnectiOSTests.swift */; };
+		50D673DA1FC3743900CA1B67 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D673D91FC3743900CA1B67 /* NotificationsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		50C69E6B1FBE50280030C1D0 /* FirstClassConnectiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstClassConnectiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50C69E6F1FBE50280030C1D0 /* FirstClassConnectiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstClassConnectiOSTests.swift; sourceTree = "<group>"; };
 		50C69E711FBE50280030C1D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50D673D91FC3743900CA1B67 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				5076C5CA1FC22E6700D76968 /* SignUpViewController.swift */,
 				5076C5CC1FC22E8400D76968 /* HomeViewController.swift */,
 				50C69E5B1FBE50270030C1D0 /* Main.storyboard */,
+				50D673D91FC3743900CA1B67 /* NotificationsViewController.swift */,
 				50C69E611FBE50270030C1D0 /* Assets.xcassets */,
 				50C69E631FBE50270030C1D0 /* LaunchScreen.storyboard */,
 				50C69E661FBE50270030C1D0 /* Info.plist */,
@@ -216,6 +219,7 @@
 				50C69E601FBE50270030C1D0 /* FirstClassConnectiOS.xcdatamodeld in Sources */,
 				5076C5CB1FC22E6700D76968 /* SignUpViewController.swift in Sources */,
 				5076C5CF1FC22F6200D76968 /* UserModel.swift in Sources */,
+				50D673DA1FC3743900CA1B67 /* NotificationsViewController.swift in Sources */,
 				50C69E581FBE50270030C1D0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
