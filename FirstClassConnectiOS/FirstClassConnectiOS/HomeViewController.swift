@@ -10,9 +10,13 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    var username = ""
+    
+    @IBOutlet weak var welcomeLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        welcomeLabel.text = "Welcome, \(username)"
         // Do any additional setup after loading the view.
     }
 

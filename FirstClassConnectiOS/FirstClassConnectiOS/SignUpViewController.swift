@@ -17,6 +17,13 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmTextField: UITextField!
     
+    var signedIn = false
+    var username = ""
+    
+    @IBAction func submitButtonPressed(_ sender: UIButton) {
+        addUser(sender)
+        //self.performSegue(withIdentifier: "SignUpSegue", sender: sender)
+    }
     
     
     override func viewDidLoad() {
@@ -30,18 +37,45 @@ class SignUpViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "SignUpSegue" {
+            let navigationController = segue.destination as! UINavigationController
+            let homeViewController = navigationController.topViewController as! HomeViewController
+            homeViewController.username = username
+        }
+    }
+    
 
-    func addUser() {
+    func addUser(_ sender: UIButton) {
         UserModel.addUser(firstName: firstNameTextField.text!, lastName: lastNameTextField.text!, email: emailTextField.text!, username: usernameTextField.text!, password: passwordTextField.text!, completionHandler: {
             data, response, error in
             do {
                 if let jsonResult = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSDictionary {
                     
+                    
                     print("add User into DB: ", jsonResult)
+                    //error in sign in
+                    if jsonResult["message"] != nil {
+                        print(jsonResult["message"]!)
+                        let alertController = UIAlertController(title: "Error", message: jsonResult["message"] as! String, preferredStyle: .alert)
+
+                        let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                        alertController.addAction(defaultAction)
+
+                        self.present(alertController, animated: true, completion: nil)
+                    } else { //successfuly signed 
+                        print("signed in")
+                        DispatchQueue.main.async {
+                            self.username = jsonResult["username"] as! String
+                            self.performSegue(withIdentifier: "SignUpSegue", sender: sender)
+                        }
+                    }
+                   
                 }
             } catch {
-
+                
             }
+            
         })
     }
     /*

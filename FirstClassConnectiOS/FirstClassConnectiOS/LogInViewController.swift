@@ -15,16 +15,17 @@ class LogInViewController: UIViewController {
     
     
     @IBAction func logInButtonPressed(_ sender: UIButton) {
-        if {
-            
-        } else {
-            let alertController = UIAlertController(title: "Error", message: "Wrong email or password.", preferredStyle: .alert)
-            
-            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-            alertController.addAction(defaultAction)
-            
-            self.present(alertController, animated: true, completion: nil)
-        }
+        loginUser(sender)
+//        print(emailTextField.text)
+//        print(passwordTextField.text)
+        
+        
+//        let alertController = UIAlertController(title: "Error", message: "Wrong email or password.", preferredStyle: .alert)
+//
+//        let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+//        alertController.addAction(defaultAction)
+//
+//        self.present(alertController, animated: true, completion: nil)
         
     }
     
@@ -36,11 +37,41 @@ class LogInViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    
+    func loginUser(_ sender: UIButton) {
+        UserModel.logInUser(email: emailTextField.text!, password: passwordTextField.text!, completionHandler: {
+            data, response, error in
+            do {
+                if let jsonResult = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSDictionary {
+                    print("email: \(self.emailTextField.text!)")
+                    print("password: \(self.passwordTextField.text!)")
+                    if jsonResult["message"] != nil {
+                        print(jsonResult["message"]!)
+//                        let alertController = UIAlertController(title: "Error", message: jsonResult["message"] as! String, preferredStyle: .alert)
+//
+//                        let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+//                        alertController.addAction(defaultAction)
+//
+//                        self.present(alertController, animated: true, completion: nil)
+                    } else { //successfuly signed
+                        print("signed in")
+//                        DispatchQueue.main.async {
+//                            self.performSegue(withIdentifier: "LogInSegue", sender: sender)
+//                        }
+                    }
+                }
+            } catch {
+                
+            }
+        })
+    }
     
     @IBAction func unwindLogout(segue: UIStoryboardSegue){
         print("logged out")
     }
+    
+    @IBAction func unwindSignUp(segue: UIStoryboardSegue){
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
